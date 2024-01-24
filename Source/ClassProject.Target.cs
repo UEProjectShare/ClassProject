@@ -5,10 +5,12 @@ using System.Collections.Generic;
 
 public class ClassProjectTarget : TargetRules
 {
-	public ClassProjectTarget( TargetInfo Target) : base(Target)
+	public ClassProjectTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
+		ExtraModuleNames.AddRange( new string[] { "SecondModule" } );
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "ClassProject" } );
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
+		ExtraModuleNames.Add("ClassProject");
 	}
 }

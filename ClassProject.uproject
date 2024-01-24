@@ -1,16 +1,27 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{276B003F-411E-A06F-A1D0-57BD75CCA5EC}",
+	"EngineAssociation": "{F20DFF7D-4D41-E8BE-C06B-72997D2201D3}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "ClassProject",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
 			]
+		},
+		{
+			"Name": "ModuleGenerator",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ec36ec6e94f74075819e2a04f7cb97f3"
 		}
 	]
 }

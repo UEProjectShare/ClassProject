@@ -5,10 +5,12 @@ using System.Collections.Generic;
 
 public class ClassProjectEditorTarget : TargetRules
 {
-	public ClassProjectEditorTarget( TargetInfo Target) : base(Target)
+	public ClassProjectEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
+		ExtraModuleNames.AddRange( new string[] { "SecondModule" } );
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "ClassProject", "MyBlueprintNodeEditor" } );
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_1;
+		ExtraModuleNames.Add("ClassProject");
 	}
 }
