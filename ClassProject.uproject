@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{276B003F-411E-A06F-A1D0-57BD75CCA5EC}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ClassProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
